@@ -15,7 +15,18 @@ public class Car {
         // Gas tank level defaults to a full tank
         this.gasTankLevel = gasTankSize;
         this.milesPerGallon = milesPerGallon;
+
     }
+    public void addGas(double gas) {
+        double totalGas = gas + this.gasTankLevel;
+
+        if (totalGas > this.gasTankSize) {
+            throw new IllegalArgumentException("Gas level exceeds the tank capacity");
+        }
+
+        this.gasTankLevel = totalGas;
+    }
+
 
     public String getMake() {
         return make;
