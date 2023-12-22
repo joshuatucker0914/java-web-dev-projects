@@ -13,7 +13,7 @@ public class QuizRunner {
                 List.of("Berlin", "Paris", "Madrid", "Rome"), 1));
 
         quiz.addQuestion(new CheckboxQuestion("Which of the following are mammals?",
-                List.of("Fish", "Dog", "Bird", "Cat"), List.of(1, 2, 4)));
+                List.of("Shark", "Dog", "Bird", "Cat"), List.of(1,2,4)));
 
         quiz.addQuestion(new TrueFalseQuestion("Is the Earth flat?", false));
 

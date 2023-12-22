@@ -26,7 +26,7 @@ public class CheckboxQuestion extends Question {
     public boolean isCorrect(List<String> answers) {
         if (answers.size() == correctOptionIndices.size()) {
             for (String answer : answers) {
-                int selectedOptionIndex = Integer.parseInt(answer) - 1;
+                int selectedOptionIndex = Integer.parseInt(answer);
                 if (!correctOptionIndices.contains(selectedOptionIndex)) {
                     return false;
                 }
