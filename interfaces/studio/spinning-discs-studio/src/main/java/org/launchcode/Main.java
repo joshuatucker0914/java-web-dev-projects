@@ -15,7 +15,7 @@ public class Main {
         myCd.writeData("");
         String cdData = myCd.readData();
         System.out.println(cdData);
-        myCd.reportInformation(); ////hereeee
+        myCd.reportInformation();
         myCd.updateDurabilityIndicator(5, 2); // Example values for scratches and physical damage
         System.out.println("Updated Durability Indicator: " + myCd.getDurabilityIndicator());
 
